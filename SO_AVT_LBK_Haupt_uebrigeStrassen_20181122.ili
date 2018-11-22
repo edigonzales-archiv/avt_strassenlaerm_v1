@@ -15,6 +15,14 @@ VERSION "2018-11-22"  =
   EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse =
     DEPENDS ON LBK_Haupt_uebrigeStrassen_Codelisten_V1_1.Codelisten;
 
+    CLASS inputdata_EsonROAD_SO
+    EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse.inputdata_EsonROAD =
+    END inputdata_EsonROAD_SO;
+
+    CLASS inputdata_EStl86_SO
+    EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse.inputdata_EStl86 =
+    END inputdata_EStl86_SO;
+
     CLASS inputdata_Estreet_SO
     EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse.inputdata_Estreet =
     END inputdata_Estreet_SO;
@@ -24,14 +32,6 @@ VERSION "2018-11-22"  =
 
     CLASS streetemission (EXTENDED) =
     END streetemission;
-
-    CLASS inputdata_EsonROAD_SO
-    EXTENDS inputdata_Estreet_SO =
-    END inputdata_EsonROAD_SO;
-
-    CLASS inputdata_EStl86_SO
-    EXTENDS inputdata_Estreet_SO =
-    END inputdata_EStl86_SO;
 
   END Emission_Strasse;
 

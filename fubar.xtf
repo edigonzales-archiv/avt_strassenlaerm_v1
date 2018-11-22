@@ -24,7 +24,15 @@
   </HEADERSECTION>
   <DATASECTION>
     <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse BID="SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse">
-</SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse>
+      <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse.inputdata_EsonROAD_SO TID="42">
+        <inputdata_remark>bbb</inputdata_remark>
+        <aDTF>678.0</aDTF>
+      </SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse.inputdata_EsonROAD_SO>
+      <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse.inputdata_Estreet_SO TID="103">
+        <inputdata_remark>aaa</inputdata_remark>
+        <aDTF>123.0</aDTF>
+      </SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse.inputdata_Estreet_SO>
+    </SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse>
     <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse BID="SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse">
       <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse.dispersion_calculation TID="101">
         <dispcal_remark>a</dispcal_remark>
