@@ -9,10 +9,11 @@ INTERLIS 2.3;
 MODEL SO_AVT_LBK_Haupt_uebrigeStrassen_20181122 (de)
 AT "http://www.geo.so.ch/models/AVT"
 VERSION "2018-11-22"  =
-  IMPORTS GeometryCHLV95_V1,CHAdminCodes_V1,LBK_Haupt_uebrigeStrassen_LV95_V1_1;
+  IMPORTS GeometryCHLV95_V1,CHAdminCodes_V1,LBK_Haupt_uebrigeStrassen_LV95_V1_1,LBK_Haupt_uebrigeStrassen_Codelisten_V1_1;
 
   TOPIC Emission_Strasse
   EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse =
+    DEPENDS ON LBK_Haupt_uebrigeStrassen_Codelisten_V1_1.Codelisten;
 
     CLASS inputdata_Estreet_SO
     EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse.inputdata_Estreet =
@@ -36,10 +37,23 @@ VERSION "2018-11-22"  =
 
   TOPIC Immission_Strasse
   EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Immission_Strasse =
+    DEPENDS ON LBK_Haupt_uebrigeStrassen_Codelisten_V1_1.Codelisten;
+
+    CLASS affected_analysis (EXTENDED) =
+    END affected_analysis;
+
+    CLASS dispersion_calculation (EXTENDED) =
+    END dispersion_calculation;
+
+    CLASS noisebarrier (EXTENDED) =
+    END noisebarrier;
 
     CLASS pointofdetermination (EXTENDED) =
       incl_highway : BOOLEAN;
     END pointofdetermination;
+
+    ASSOCIATION dispersion_calculation2pointofdetermination(EXTENDED) =
+    END dispersion_calculation2pointofdetermination;
 
   END Immission_Strasse;
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION SENDER="ili2pg-3.12.2-816b1d9384cf964489c804408fad12c85eea8d4d" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="CatalogueObjects_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="CatalogueObjectTrees_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="Units" VERSION="2012-02-20" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="InternationalCodes_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="Localisation_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="LocalisationCH_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="Dictionaries_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="DictionariesCH_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="CoordSys" VERSION="2015-11-24" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="CHAdminCodes_V1" VERSION="2018-02-19" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="AdministrativeUnits_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="AdministrativeUnitsCH_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="GeometryCHLV03_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="GeometryCHLV95_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="LBK_Haupt_uebrigeStrassen_Codelisten_V1_1" VERSION="2018-09-12" URI="https://models.geo.admin.ch/BAFU/"/>
+      <MODEL NAME="LBK_Haupt_uebrigeStrassen_LV03_V1_1" VERSION="2018-09-12" URI="https://models.geo.admin.ch/BAFU/"/>
+      <MODEL NAME="LBK_Haupt_uebrigeStrassen_LV95_V1_1" VERSION="2018-09-12" URI="https://models.geo.admin.ch/BAFU/"/>
+      <MODEL NAME="SO_AVT_LBK_Haupt_uebrigeStrassen_20181122" VERSION="2018-11-22" URI="http://www.geo.so.ch/models/AVT"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse BID="SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse">
+</SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Emission_Strasse>
+    <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse BID="SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse">
+      <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse.dispersion_calculation TID="101">
+        <dispcal_remark>a</dispcal_remark>
+        <dispersionmodel>b</dispersionmodel>
+        <dispersionapplication>c</dispersionapplication>
+        <versionnr_dispapp>d</versionnr_dispapp>
+        <meterologydata>e</meterologydata>
+        <heightmodel>f</heightmodel>
+        <building_database>g</building_database>
+        <noisebarrier_geodata>h</noisebarrier_geodata>
+        <emissiondata>i</emissiondata>
+        <refyear_register>1</refyear_register>
+        <NPR_name>j</NPR_name>
+        <I_measurement>true</I_measurement>
+      </SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse.dispersion_calculation>
+      <SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse.pointofdetermination TID="102">
+        <determination_remark>aa</determination_remark>
+        <Lr_day>11.0</Lr_day>
+        <Lr_night>22.0</Lr_night>
+        <mcd_street>33.0</mcd_street>
+        <mcn_street>44.0</mcn_street>
+        <geometry_pod>
+          <COORD>
+            <C1>2600000.0</C1>
+            <C2>1200000.0</C2>
+            <C3>500.0</C3>
+          </COORD>
+        </geometry_pod>
+        <ID_pod>bb</ID_pod>
+        <EGID>55</EGID>
+        <EDID>66</EDID>
+        <address_pod>cc</address_pod>
+        <exposure_limit_date>2018-11-23</exposure_limit_date>
+        <dispersion_calculation REF="101"/>
+        <incl_highway>true</incl_highway>
+      </SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse.pointofdetermination>
+    </SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.Immission_Strasse>
+  </DATASECTION>
+</TRANSFER>
