@@ -1,0 +1,46 @@
+INTERLIS 2.3;
+
+/** !!------------------------------------------------------------------------------
+ * !! Version    | wer | Änderung
+ *  !!------------------------------------------------------------------------------ 
+ * !! 2018-11-22 | XX  | Initialversion
+ */
+!!@ technicalContact=mailto:agi@bd.so.ch
+MODEL SO_AVT_LBK_Haupt_uebrigeStrassen_20181122 (de)
+AT "http://www.geo.so.ch/models/AVT"
+VERSION "2018-11-22"  =
+  IMPORTS GeometryCHLV95_V1,CHAdminCodes_V1,LBK_Haupt_uebrigeStrassen_LV95_V1_1;
+
+  TOPIC Emission_Strasse
+  EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse =
+
+    CLASS inputdata_Estreet_SO
+    EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Emission_Strasse.inputdata_Estreet =
+    END inputdata_Estreet_SO;
+
+    CLASS inputdata_tram (EXTENDED) =
+    END inputdata_tram;
+
+    CLASS streetemission (EXTENDED) =
+    END streetemission;
+
+    CLASS inputdata_EsonROAD_SO
+    EXTENDS inputdata_Estreet_SO =
+    END inputdata_EsonROAD_SO;
+
+    CLASS inputdata_EStl86_SO
+    EXTENDS inputdata_Estreet_SO =
+    END inputdata_EStl86_SO;
+
+  END Emission_Strasse;
+
+  TOPIC Immission_Strasse
+  EXTENDS LBK_Haupt_uebrigeStrassen_LV95_V1_1.Immission_Strasse =
+
+    CLASS pointofdetermination (EXTENDED) =
+      incl_highway : BOOLEAN;
+    END pointofdetermination;
+
+  END Immission_Strasse;
+
+END SO_AVT_LBK_Haupt_uebrigeStrassen_20181122.

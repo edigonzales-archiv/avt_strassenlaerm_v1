@@ -1,0 +1,29 @@
+INTERLIS 2.3;
+
+ /** !!----------------------------------------------------------------------------
+ * !! Version    | wer 		| Aenderung 
+ * !!------------------------------------------------------------------------------ 
+ * !! 2018-11-20 | G+P/cst  | Entwurf kantonales Datenmodell
+ * !!==============================================================================
+ */
+!!@ technicalContact=mailto:agi@bd.so.ch
+MODEL SO_LBK_Haupt_uebrigeStrassen_LV03_V1 (de) 
+AT "http://www.geo.so.ch/models/XYZ"
+VERSION "2018-11-20"  =
+  IMPORTS LBK_Haupt_uebrigeStrassen_V1;
+	  
+  /** Erweiterung Topic Immission_Strasse*/
+  TOPIC Immission_Strasse EXTENDS LBK_Haupt_uebrigeStrassen_V1.Immission_Strasse =
+    CLASS pointofdetermination_SO EXTENDS LBK_Haupt_uebrigeStrassen_V1.Immission_Strasse.pointofdetermination =
+		/* 'Beurteilung' wird über eine SQL-Abfrage im Publikationsmodell eruiert
+		limit_value: (AW, IGW, PW, klPW: FINAL);*/
+		community : TEXT*100;
+		parcelnr : TEXT*20;
+		/* Empfindlichkeitsstufe wird nicht aus MGDM ES übernommen, da hier
+		interessiert, mit welcher ES die Berechnung durchgeführt wurde*/
+		sens_level : TEXT*5;
+		incl_highway : BOOLEAN;
+    END pointofdetermination_SO;
+  END Immission_Strasse;
+
+END SO_LBK_Haupt_uebrigeStrassen_LV03_V1.
